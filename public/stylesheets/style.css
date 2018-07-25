@@ -1,5 +1,52 @@
-body {
-  text-align: center;
-  background-color: #D4F5F5;
-  color: #554348
+.row { 
+image: fixed;
+position: absolute;
+left: 14%;
+right: 18%;
+top: 600px;
+
+
 }
+
+.donate {
+  image: fixed;
+  position: absolute;
+  top: 465px;
+  width: 10%;
+  left: 29.5%;  
+}
+
+#involv {
+  left: 58.5%;
+}
+
+
+#walk {
+  left: 44.5%;
+}
+
+
+
+.rowwa {
+  image: fixed;
+ position: absolute;
+  top: 900px;
+  left: 14%;
+  right: 18%;
+}
+
+.background {
+position: absolute;
+background-repeat: no-repeat;
+background-size: cover;
+width: 1400px;
+
+
+
+}
+
+html, body {
+    max-width: 90%;
+    overflow-x: hidden;
+}
+

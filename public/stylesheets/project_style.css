@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Metrophobic');
+.Header {
+  font-family: Open Sans Condensed;
+  text-align: center;
+  font-size: 75px;
+}
+
+body {
+  background-color: 	#e89f33;
+  color:	white;
+  font-family: Metrophobic;
+  font-size: 25px;
+  text-align: center;
+}
+
+.result_title {
+  font-weight: bold;
+}
+
+a:link {
+  color: 	white;
+}
+
+a:hover {
+  color: #3E905F;
+}
+
+a:active {
+  color: #3E905F;
+}
+
+a:visited {
+  color: 	white;
+}
+
+.banner-header {
+  text-align: center;
+}

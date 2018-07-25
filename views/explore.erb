@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htmL>
+ <head>
+   <title>Explore!</title>
+   <link rel="stylesheet" href="stylesheets/project_style.css" type="text/css">
+ </head>
+ <body>
+   <!-- <h1 class="Header">EXPLORE</h1> -->
+   <header class="banner-header" role="banner">
+     <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36318567_1023520127824861_2048847872916455424_o.jpg?_nc_cat=0&oh=5f3d0b3d9a7e3ed732c4a30a749ec69c&oe=5BB5AA03">
+     <!-- <img src="https://drive.google.com/open?id=0B18PBIepsQRXUkoxc2liei11YnBFeGlJdE9kUzNhcFlHN3A0"> -->
+   </header>
+   <h2>Answer some questions to find convenient places to go that fit your needs!</h2>
+   <form method="POST" action="/explore">
+     <p>Which city are you going to?
+       <select name="city">
+        <option value="LA"> Los Angeles
+        <option value="NYC"> New York City
+        <option value="Baltimore"> Baltimore
+        </select>
+     </p>
+     <p>Age Group:
+       <select name="age">
+         <option value="kid">Child
+         <option value="teen">Teen/Young Adult
+         <option value="adult">Adult
+       </select>
+     </p>
+     <p>You are looking for:
+      <select name="category">
+        <option value="food">Places to eat
+        <option value="entertainment">Entertainment
+      </select>
+     </p>
+     <div class="accommodations">
+        <p>
+        <h4>Select your accommodations:</h4>
+          <input class="single-checkbox"type="checkbox" name="noise" value="noise">Sensitive to loud noise<br>
+          <input class="single-checkbox" type="checkbox" name="crowds" value="crowds">Gets overwhelmed by large crowds<br>
+          <input class="single-checkbox" type="checkbox" name="sensory" value="sensory">Enjoys hands-on/sensory experiences<br>
+          <input class="single-checkbox" type="checkbox" name="attention" value="attention"> Has a short attention span (ADHD/ADD)<br>
+       </p>
+     </div>
+   <input type="submit">
+ </form>

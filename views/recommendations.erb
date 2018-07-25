@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results!</title>
+    <link rel="stylesheet" href="stylesheets/project_style.css" type="text/css">
+  </head>
+  <body>
+    <!-- <h1 class="Header">PLACES TO GO</h1> -->
+    <header class="banner-header" role="banner">
+      <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/36423301_1023520144491526_7357989159480328192_o.jpg?_nc_cat=0&oh=a686a37403ad06c8bd56e0cbde207b9b&oe=5BDECD4E">
+      <!-- <img src="https://drive.google.com/open?id=0B18PBIepsQRXNUplNWFPc3NHOEZ1cGt3aTZMRVBFSm5Sa3g0"> -->
+    </header>
+    <h2>Here are some recommendations on where to go based on your answers:</h2>
+    <% @results= [] %>
+    <% @places.each do |place| %>
+      <% if place.city.include?(@city.to_s) == true && place.age.include?(@age.to_s) == true && place.category == @category %>
+        <% if (@accom & place.accom) == @accom %>
+          <% @results.push(place) %>
+        <% end %>
+      <% end %>
+    <% end %>
+    <% @results.each do |result| %>
+      <h3 class="result_title"><a href= <%= result.link %>><%= result.name %></a></h3>
+      <p><%= result.description %></p>
+    <% end %>
+  </body>
+</html>
